@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mainClass=../lib/classes-2.3.4_r1.jar
+mainClass=../lib/classes-2.3.4_r1.jar:../lib/BackDroid.jar
 mainGAPI=../lib/gapi-16.jar
 mainSDK=../lib/android_v25.jar
 

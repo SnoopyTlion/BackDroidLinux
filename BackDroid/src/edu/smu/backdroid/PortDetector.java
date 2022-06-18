@@ -94,7 +94,7 @@ public class PortDetector {
         // A strange bug when run python grepPort.py in the background
         if (classpath.equals("null")) {
             // TODO I use Java 7 (Open JDK) to compile, but use Java 8 (Oracle) to run
-            Scene.v().setSootClassPath("/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar");
+            Scene.v().setSootClassPath("/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib");
         }
         Scene.v().extendSootClassPath(DEX2JARfile);
         Scene.v().extendSootClassPath("../lib/android_v25.jar");
@@ -247,7 +247,7 @@ public class PortDetector {
                     "-e \"Class descriptor\" " +
                     "| grep -B 1 -e \"Ljavax/crypto/Cipher;.getInstance:(\" " +
                     "-e \"Lorg/apache/http/conn/ssl/SSLSocketFactory;.setHostnameVerifier:(\" " +
-                    "-e \"Ljavax/net/ssl/HttpsURLConnection;.setHostnameVerifier:(\" " +
+                       "-e \"Ljavax/net/ssl/HttpsURLConnection;.setHostnameVerifier:(\" " +
                     "| grep \"Class descriptor\" " +
                     "| grep -o \"L.*;\"", DEXDUMPlog);
         }

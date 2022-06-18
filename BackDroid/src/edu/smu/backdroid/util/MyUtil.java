@@ -2028,7 +2028,8 @@ public class MyUtil {
             else {
                 try {
                     Path dexFilePath = Paths.get(PortDetector.DEX2JARfile);
-                    FileSystem dexZipFs = FileSystems.newFileSystem(dexFilePath, null);
+                    ClassLoader classLoader = null;
+                    FileSystem dexZipFs = FileSystems.newFileSystem(dexFilePath, classLoader);
                     
                     String cls_cur = cls_strs[0];
                     for (int i = 0; i < cls_strs.length; i++) {

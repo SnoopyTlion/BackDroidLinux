@@ -19,8 +19,8 @@ SLEEPTIME = 2
 SMLSLEEP = 4
 BIGSLEEP = 12 #since attack 3 requires 8s
 DATAOUT = 'dataOut'
-dexdump = '/home/dao/software/android-sdk-linux_x86/build-tools/28.0.3/dexdump'
-dex2jar="/home/dao/software/dex2jar/dex2jar-2.1/d2j-dex2jar.sh"
+dexdump = '/home/raven/Android/Sdk/build-tools/33.0.0/dexdump'
+dex2jar="/home/raven/Desktop/dex2jar/dex2jar/dex-tools/build/distributions/dex-tools-2.2-SNAPSHOT/d2j-dex2jar.sh"
 backdroid="../bin/backdroid.sh"
 
 
